@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Clock</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <div id="container">
+        <div id="heading">
+            <h1>CHESS CLOCK</h1>
+        </div>
+        <div id="container1" onclick="p2()">
+            <!-- <span class="images" id="settings1" onclick="settings2()"><img src="settings.png" alt="" ></span> -->
+            <div id="player1">
+                <span class="cntdown1" id="min1">10</span>
+                <span class="cntdown1" class="colon">:</span>
+                <span class="cntdown1" id="sec1">00</span>
+                <span class="cntdown1" class="colon"></span>
+                <span class="cntdown1" id="count1"></span>
+                <!-- <span class="cntdown1" class="colon">:</span>
+                <span class="cntdown1" id="count1">00</span> -->
+            </div>  
+        </div>
+        <div class="moves"><span>MOVES : </span><span id="moves1">0</span></div>
+
+        <div id="middle">
+            &emsp;<span class="images" id="reset"  onclick="reset()"><img src="reset.png" alt=""></span>&emsp;
+            <span class="images" id="start" onclick="start()"><img src="play.png" alt="" ></span>&emsp;
+            <span class="images" id="stop" onclick="stop()"><img src="pause.png" alt="" ></span>&emsp;
+            
+        </div>
+        <div class="moves"><span>MOVES : </span><span id="moves2">0</span></div>
+        <div id="container2" onclick="p1()">
+            <div id="player1">
+                <span class="cntdown2" id="min2">10</span>
+                <span class="cntdown2" class="colon">:</span>
+                <span class="cntdown2" id="sec2">00</span>
+                <span class="cntdown2" class="colon"></span>
+                <span class="cntdown2" id="count2"></span>
+            </div>
+            <!-- <span class="images" id="settings2" onclick="settings1()"><img src="settings.png" alt="" ></span> -->
+        </div>
+        <div id="foot">Created By Krish Gupta</div>
+    </div>
+    <script src="chess.js"></script>
+</body>
+</html>
