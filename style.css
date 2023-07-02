@@ -19,7 +19,7 @@ body{
 }
 #container{
     /* background-color: rgb(147, 211, 147); */
-    height: 100vh;
+    height: 87vh;
     width: 55%;
 }
 
@@ -87,7 +87,7 @@ body{
 }
 #foot{
     font-size: 1rem;
-    padding-top: 17px;
+    padding-top: 13px;
 }
 @media only screen and (max-width: 850px) and (min-width: 420px){
     #heading{
@@ -125,7 +125,7 @@ body{
         padding-top: 5px;
     }
     #container{
-        height: 93vh;
+        height: 91vh;
         width: 100%;
     }
     #middle{
