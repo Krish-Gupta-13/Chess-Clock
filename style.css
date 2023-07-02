@@ -19,7 +19,7 @@ body{
 }
 #container{
     /* background-color: rgb(147, 211, 147); */
-    height: 87vh;
+    height: 89vh;
     width: 55%;
 }
 
@@ -56,9 +56,9 @@ body{
     min-height: 1.5rem;
     min-width: 1.5rem;
     cursor: pointer;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 2%;
 }
 /* #settings1{
     display: flex;
@@ -79,7 +79,7 @@ body{
 }
 .cntdown1{
     font-size: 300%;
-    margin-top: 15%;
+    margin-top: 11%;
 }
 .cntdown2{
     font-size: 300%;
@@ -87,7 +87,7 @@ body{
 }
 #foot{
     font-size: 1rem;
-    padding-top: 13px;
+    padding-top: 5px;
 }
 @media only screen and (max-width: 850px) and (min-width: 420px){
     #heading{
@@ -125,12 +125,12 @@ body{
         padding-top: 5px;
     }
     #container{
-        height: 91vh;
+        height: 93vh;
         width: 100%;
     }
     #middle{
-        height: 12%;
-        padding-top: 0px;
+        height: 8%;
+        padding-top: 13px;
     }
 
     #container1{
@@ -140,9 +140,9 @@ body{
         height: 35%;
     }
     .images img{
-        height: 2.3rem;
-        width: 2.3rem;
-        margin: 8%;
+        height: 1.7rem;
+        width: 1.7rem;
+        /* margin: 8%; */
     }
     .cntdown1{
         margin-top: 25%;
@@ -150,7 +150,7 @@ body{
     .cntdown2{
         margin-top: 25%;
     }
-    #settings1 img{
+    /* #settings1 img{
         height: 2rem;
         width: 2rem;
     }
@@ -158,5 +158,5 @@ body{
         height: 2rem;
         width: 2rem;
         color: rgb(249, 6, 6);
-    }
+    } */
 }

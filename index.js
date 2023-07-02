@@ -1,5 +1,7 @@
 let btngreen = document.querySelector('#container1');
 let btngray = document.querySelector('#container2');
+let player2startimeclick = document.querySelector('#settings2');
+let player1startimeclick = document.querySelector('#settings1');
 
 btngreen.addEventListener('click', () => btngray.style.backgroundColor = '#b2e068');
 btngreen.addEventListener('click', () => btngreen.style.backgroundColor = 'rgb(221, 216, 216)');
@@ -25,6 +27,34 @@ var count2 = 99;
 
 var movecnt1 = 0;
 var movecnt2 = 0;
+
+
+player1startimeclick.addEventListener('click', () => {
+    let player1startime = prompt('Enter Player1 Timer', 10);
+    if(player1startime!=null){
+        document.getElementById("min1").innerHTML = `${player1startime}`;
+        min1 = `${player1startime}`;
+    }
+    else{
+        document.getElementById("min1").innerHTML = 10;
+        min1 = 10;
+    }
+})
+
+
+player2startimeclick.addEventListener('click', () => {
+    // let min22 = 10;
+    let player2startime = prompt('Enter Player2 Timer', 10);
+    if(player2startime!=null){
+        document.getElementById("min2").innerHTML = `${player2startime}`;
+        min2 = `${player2startime}`;
+    }
+    else{
+        document.getElementById("min2").innerHTML = `${min2}`;
+        min2 = 10;
+    }
+})
+
 
 function p2(){
     timer1 = false;
@@ -137,6 +167,8 @@ function stopwatch1(){
 
 
 
+
+
 function start(){
     if(turn==1){
         timer1 = true;
@@ -158,6 +190,12 @@ function stop(){
         turn = 2;
     }
 }
+
+
+
+
+
+
 
 function reset(){
 
