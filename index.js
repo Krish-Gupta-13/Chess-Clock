@@ -77,7 +77,7 @@ function stopwatch2(){
             btngray.style.backgroundColor = 'rgb(249, 6, 6)';
             timer2 = false;
             document.getElementById("sec2").innerHTML = "00";
-            // alert('Your time is over!!! Player1 has won');
+            alert('Your time is over!!! Player1 has won');
             return;
         }
 
@@ -130,7 +130,7 @@ function stopwatch1(){
             btngreen.style.backgroundColor = 'rgb(249, 6, 6)';
             timer1 = false;
             document.getElementById("sec1").innerHTML = "00";
-            // alert('Your time is over!!! Player2 has won');
+            alert('Your time is over!!! Player2 has won');
             return;
         }
 

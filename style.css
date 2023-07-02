@@ -19,7 +19,7 @@ body{
 }
 #container{
     /* background-color: rgb(147, 211, 147); */
-    height: 89vh;
+    height: 88vh;
     width: 55%;
 }
 
@@ -89,6 +89,12 @@ body{
     font-size: 1rem;
     padding-top: 5px;
 }
+
+/* .tiny1{
+    display: flex;
+    padding-left: 2rem;
+} */
+
 @media only screen and (max-width: 850px) and (min-width: 420px){
     #heading{
         height: 8%;
@@ -129,7 +135,7 @@ body{
         width: 100%;
     }
     #middle{
-        height: 8%;
+        height: 7%;
         padding-top: 13px;
     }
 
@@ -140,15 +146,15 @@ body{
         height: 35%;
     }
     .images img{
-        height: 1.7rem;
-        width: 1.7rem;
+        height: 1.6rem;
+        width: 1.6rem;
         /* margin: 8%; */
     }
     .cntdown1{
-        margin-top: 25%;
+        margin-top: 29%;
     }
     .cntdown2{
-        margin-top: 25%;
+        margin-top: 26%;
     }
     /* #settings1 img{
         height: 2rem;
