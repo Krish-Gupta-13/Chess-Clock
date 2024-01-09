@@ -19,7 +19,7 @@ body{
 }
 #container{
     /* background-color: rgb(147, 211, 147); */
-    height: 88vh;
+    height: 89vh;
     width: 55%;
 }
 
@@ -34,9 +34,10 @@ body{
     border: 1px solid black;
 }
 #middle{
+    /* display: flex; */
+    /* justify-content: space-between; */
     background-color: gray;
     height: 15%;
-    padding-top: 12px;
     border: 1px solid black;
 
 }
@@ -89,12 +90,6 @@ body{
     font-size: 1rem;
     padding-top: 5px;
 }
-
-/* .tiny1{
-    display: flex;
-    padding-left: 2rem;
-} */
-
 @media only screen and (max-width: 850px) and (min-width: 420px){
     #heading{
         height: 8%;
@@ -106,8 +101,9 @@ body{
         width: 100%;
     }
     #middle{
-        height: 18%;
-        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        height: 12%;
     }
 
     #container1{
@@ -135,7 +131,9 @@ body{
         width: 100%;
     }
     #middle{
-        height: 7%;
+        display: flex;
+        justify-content: space-between;
+        height: 6%;
         padding-top: 13px;
     }
 
@@ -146,23 +144,19 @@ body{
         height: 35%;
     }
     .images img{
-        height: 1.6rem;
-        width: 1.6rem;
-        /* margin: 8%; */
+        height: 1.7rem;
+        width: 1.7rem;
     }
     .cntdown1{
-        margin-top: 29%;
+        margin-top: 25%;
     }
     .cntdown2{
-        margin-top: 26%;
+        margin-top: 25%;
     }
-    /* #settings1 img{
-        height: 2rem;
-        width: 2rem;
+    #settings1 img{
+        padding-left: 10px;
     }
     #settings2 img{
-        height: 2rem;
-        width: 2rem;
-        color: rgb(249, 6, 6);
-    } */
+        padding-right: 10px;
+    }
 }
