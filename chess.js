@@ -69,6 +69,7 @@ function Container2Click(){
 
 function Container1Click(){
     if(turn==2 || turn==-1){
+        
         timer2 = false;
         turn = 1;
         timer1 = true;
