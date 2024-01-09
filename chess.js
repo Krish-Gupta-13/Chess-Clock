@@ -12,7 +12,7 @@ btngray.addEventListener('click', () => btngreen.style.backgroundColor = '#b2e06
 // let movecount1 = document.getElementById("moves1");
 // let movecount2 = document.getElementById("moves2");
 
-var turn = 1;
+var turn = -1;
 
 var timer1 = false; 
 var timer2 = false;
@@ -57,28 +57,28 @@ player2startimeclick.addEventListener('click', () => {
 
 
 function Container2Click(){
-    if(turn==1){
+    if(turn==1 || turn==-1){
         timer1 = false;
         timer2 = true;
         turn = 2;
         movecnt1++;
         document.getElementById("moves1").innerHTML = movecnt1;
-        stopwatch2();
+        TimerOfPlayer2();
     }
 }
 
 function Container1Click(){
-    if(turn==2){
+    if(turn==2 || turn==-1){
         timer2 = false;
         turn = 1;
         timer1 = true;
         movecnt2++;
         document.getElementById("moves2").innerHTML = movecnt2;
-        stopwatch1();
+        TimerOfPlayer1();
     }
 }
 
-function stopwatch2(){
+function TimerOfPlayer2(){
     if(timer2==true){
         count2 = count2 - 1;
         if(count2==0){
@@ -116,14 +116,14 @@ function stopwatch2(){
         document.getElementById("min2").innerHTML = minstr2;
         document.getElementById("sec2").innerHTML = secstr2;
         // document.getElementById("count2").innerHTML = countstr2;
-        setTimeout("stopwatch2()" ,10);
+        setTimeout("TimerOfPlayer2()" ,10);
     }
 }
 
 
 
 
-function stopwatch1(){
+function TimerOfPlayer1(){
     if(timer1==true){
         count1 = count1 - 1;
         if(count1==0){
@@ -162,7 +162,7 @@ function stopwatch1(){
         document.getElementById("min1").innerHTML = minstr1;
         document.getElementById("sec1").innerHTML = secstr1;
         // document.getElementById("count1").innerHTML = countstr1;
-        setTimeout("stopwatch1()" ,10);
+        setTimeout("TimerOfPlayer1()" ,10);
     }
 }
 
@@ -177,11 +177,11 @@ function start(){
     if(!timer1 && !timer2){
         if(turn==1){
             timer1 = true;
-            stopwatch1();
+            TimerOfPlayer1();
         }
         else if(turn==2){
             timer2 = true;
-            stopwatch2();
+            TimerOfPlayer2();
         }
     }
 }
