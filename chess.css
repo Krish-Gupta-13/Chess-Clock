@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(221, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#heading{
+    background-color: black;
+    color: white;
+    height: 8%;
+    padding: 2px;
+    padding-top: 5px;
+}
+#container{
+    /* background-color: rgb(147, 211, 147); */
+    height: 89vh;
+    width: 55%;
+}
+
+#container1{
+    height: 37%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+#container2{
+    cursor: pointer;
+    height: 37%;
+    border: 1px solid black;
+}
+#middle{
+    background-color: gray;
+    height: 15%;
+    padding-top: 12px;
+    border: 1px solid black;
+
+}
+
+#player1{
+    display: flex;
+    justify-content: center;
+}
+#player2{
+    display: flex;
+    justify-content: center;
+}
+
+.images img{
+    max-height: 3rem;
+    max-width: 3rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    cursor: pointer;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 2%;
+}
+/* #settings1{
+    display: flex;
+}
+#settings2{
+    display: flex;
+} */
+.moves{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#moves1{
+    padding-left: 65%;
+    
+}
+#moves2{
+    padding-left: 65%;
+}
+.cntdown1{
+    font-size: 300%;
+    margin-top: 11%;
+}
+.cntdown2{
+    font-size: 300%;
+    margin-top: 12%;
+}
+#foot{
+    font-size: 1rem;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 850px) and (min-width: 420px){
+    #heading{
+        height: 8%;
+        padding: 2px;
+        padding-top: 7px;
+    }
+    #container{
+        height: 92.7vh;
+        width: 100%;
+    }
+    #middle{
+        height: 18%;
+        padding-top: 0px;
+    }
+
+    #container1{
+        height: 40%;
+    }
+    #container2{
+        min-height: 40%;
+    }
+    .cntdown1{
+        margin-top: 12%;
+    }
+    .cntdown2{
+        margin-top: 18%;
+    }
+}
+
+@media only screen and (max-width: 420px) and (min-width: 100px){
+    #heading{
+        height: 5%;
+        padding: 2px;
+        padding-top: 5px;
+    }
+    #container{
+        height: 93vh;
+        width: 100%;
+    }
+    #middle{
+        height: 8%;
+        padding-top: 13px;
+    }
+
+    #container1{
+        height: 37%;
+    }
+    #container2{
+        height: 35%;
+    }
+    .images img{
+        height: 1.7rem;
+        width: 1.7rem;
+        /* margin: 8%; */
+    }
+    .cntdown1{
+        margin-top: 25%;
+    }
+    .cntdown2{
+        margin-top: 25%;
+    }
+    /* #settings1 img{
+        height: 2rem;
+        width: 2rem;
+    }
+    #settings2 img{
+        height: 2rem;
+        width: 2rem;
+        color: rgb(249, 6, 6);
+    } */
+}
