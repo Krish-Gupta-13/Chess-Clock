@@ -39,6 +39,8 @@ player1startimeclick.addEventListener('click', () => {
         document.getElementById("min1").innerHTML = 10;
         min1 = 10;
     }
+    document.getElementById("sec1").innerHTML = "00";
+    sec1 = 0;
 })
 
 
@@ -53,6 +55,8 @@ player2startimeclick.addEventListener('click', () => {
         document.getElementById("min2").innerHTML = `${min2}`;
         min2 = 10;
     }
+    document.getElementById("sec2").innerHTML = "00";
+    sec2 = 0;
 })
 
 
@@ -69,7 +73,6 @@ function Container2Click(){
 
 function Container1Click(){
     if(turn==2 || turn==-1){
-        
         timer2 = false;
         turn = 1;
         timer1 = true;
@@ -117,7 +120,7 @@ function TimerOfPlayer2(){
         document.getElementById("min2").innerHTML = minstr2;
         document.getElementById("sec2").innerHTML = secstr2;
         // document.getElementById("count2").innerHTML = countstr2;
-        setTimeout("TimerOfPlayer2()" ,10);
+        setTimeout("TimerOfPlayer2()" , 8.5);
     }
 }
 
@@ -163,7 +166,7 @@ function TimerOfPlayer1(){
         document.getElementById("min1").innerHTML = minstr1;
         document.getElementById("sec1").innerHTML = secstr1;
         // document.getElementById("count1").innerHTML = countstr1;
-        setTimeout("TimerOfPlayer1()" ,10);
+        setTimeout("TimerOfPlayer1()" ,8.5);
     }
 }
 
@@ -175,26 +178,32 @@ function TimerOfPlayer1(){
 
 
 function start(){
-    if(!timer1 && !timer2){
-        if(turn==1){
-            timer1 = true;
-            TimerOfPlayer1();
-        }
-        else if(turn==2){
-            timer2 = true;
-            TimerOfPlayer2();
+    let a = confirm("Do you want to resume the timer?")
+    if(a==true){
+        if(!timer1 && !timer2){
+            if(turn==1){
+                timer1 = true;
+                TimerOfPlayer1();
+            }
+            else if(turn==2){
+                timer2 = true;
+                TimerOfPlayer2();
+            }
         }
     }
 }
 
 function stop(){
-    if(timer1==true){
-        timer1 = false;
-        turn = 1;
-    }
-    else if(timer2==true){
-        timer2 = false;
-        turn = 2;
+    let a = confirm("Do you want to pause the timer?")
+    if(a==true){
+        if(timer1==true){
+            timer1 = false;
+            turn = 1;
+        }
+        else if(timer2==true){
+            timer2 = false;
+            turn = 2;
+        }
     }
 }
 
@@ -232,6 +241,9 @@ function reset(){
         document.getElementById("moves2").innerHTML = 0;
         btngray.style.backgroundColor = 'rgb(221, 216, 216)';
         btngreen.style.backgroundColor = 'rgb(221, 216, 216)';
+        turn = -1;
+        timer1 = false; 
+        timer2 = false;
     }
 }
 
